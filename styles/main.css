@@ -14,27 +14,49 @@
     --white:#FFFFFF;
 
     --button-yellow:#F1C150;
+    --background-blue:#2376FF;
 
 }
 
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
 .parent-container{
-    min-height: 100%;
-    max-height: 100%;
-    min-width: 100%;
-    max-width: 100%;
     background-image: url("/assets/dollar-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    /*display: flex;*/
-    /*padding: 3rem;*/
-    /*background-color: var(--blue);*/
+
 }
-.he
+.upper-container{
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    background-color: var(--background-blue);
+    mix-blend-mode: multiply;
+    /*display: flex;*/
+}
+
+header div{
+    padding:2rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    /*border: 1px solid red;*/
+}
+.main-container{
+    background: var(--white);
+    border-radius: 4px;
+    display: block;
+    /*border: 1px solid green;*/
+    margin: 0 10% auto;
+}
+.left-section{
+
+}
+
