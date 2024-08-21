@@ -96,11 +96,12 @@ header div {
 
 .left-section p {
     margin-bottom: 4rem;
+    flex-grow: 0.7;
 }
 
 .base-logos {
     display: flex;
-    margin: 4.5rem 1rem;
+    margin: 0 1rem;
     justify-content: space-between;
 }
 
@@ -170,4 +171,12 @@ select{
     width: 48%;
     border-radius: 2px;
     align-content: center;
+}
+
+.page-one .radios{
+    margin-bottom: 0;
+}
+
+.page-one button{
+    margin-top: 5.5rem;
 }
