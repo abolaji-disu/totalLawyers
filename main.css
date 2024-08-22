@@ -45,7 +45,7 @@ html, body {
 }
 
 .upper-container {
-    flex-grow: 2;
+    flex-grow: 5;
     background-color: var(--background-blue);
     mix-blend-mode: hard-light;
     padding: 1rem;
@@ -74,10 +74,9 @@ header div {
 .main-container {
     background: var(--white);
     border-radius: 4px;
-    margin: 2rem 25%;
-    /*padding: 1.5rem;*/
+    margin: 1rem 25%;
     display: flex;
-    /*height: 24rem;*/
+    height: 100%;
 }
 
 .left-section {
@@ -85,30 +84,53 @@ header div {
     flex-direction: column;
     background: var(--light-gray);
     max-width: 45%;
+    min-width: 45%;
     border-radius: 4px;
 }
 
 
 .left-section h2, .sub-header {
-    margin:  1rem 1rem 0 1rem;
+    margin: 1.5rem 1rem 0 1rem;
+}
+
+
+.left-section h2{
+    position: relative;
+}
+
+.left-section h2::after{
+    content: "";
+    display: block;
+    border-bottom: 3px solid var(--blue);
+    width: 30%;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
 }
 
 .left-section p {
-    margin-bottom: 4rem;
+
     font-size: 0.75rem;
-    flex-grow: 0.7;
+
 }
 
 .base-logos {
     display: flex;
     margin: 0 1rem;
     justify-content: space-between;
+    align-content: flex-end;
+}
+.base-logos img{
+    width: 4rem;
 }
 
-.right-section  div{
+.right-section {
+   padding: 0 1rem;
+}
+
+.page-wrapper{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
 }
 
 .lower-container  p{
@@ -131,38 +153,37 @@ select{
     border: 1px solid var(--medium-blue);
     border-radius: 5px;
     margin: 0 0 1rem;
+    display: block;
+    width: 100%;
 }
 
-.right-section label{
+.divider {
+
+    /*margin: 1rem 0 1rem 0;*/
+}
+
+.divider label{
+    /*display: inline-block;*/
     margin-bottom: 1rem;
+    font-size: 0.90rem;
 }
 
 .right-section button{
     outline: none;
     background: var(--button-yellow);
     border: 1px solid #EE9201;
-    padding: 1rem;
     border-radius: 4px;
     color: white;
-    font-size: 1.55rem;
     cursor: pointer;
-}
-.default{
-    border: 2px  solid red;
-}
-
-.right-section button{
-    width: 50%;
     padding: 0.75rem;
     font-size: 0.88rem;
 }
 
+
+
 .right-section .radios{
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
-    row-gap: 1rem;
-    padding: 0;
-    margin-bottom: 5.5rem;
 }
 
 .right-section .radios label{
@@ -172,44 +193,29 @@ select{
     border-radius: 2px;
     align-content: center;
 }
-label{
-    font-size: 0.75rem;
-}
+
 
 .page-one .radios{
     margin-bottom: 0;
-}
-
-.page-one button{
-    margin-top: 5.5rem;
 }
 
 .page-two .radios{
     margin-bottom: 0;
 }
 
-.page-two button{
-    margin-top: 5.5rem;
-}
-
-.page-three input {
+.divider label  input[type="text"] {
     border: 1px solid var(--gray);
     outline: none;
     padding: 0.80rem;
     border-radius: 5px;
-    margin: 0 0 1rem;
+    width: 100%;
 }
-.page-three input ,textarea{
+
+.divider input[type="text"] ,textarea{
     margin-top: 1rem;
 }
 
-.page-three div{
-    padding: 0;
-    margin: 0;
-}
-.page-three button{
-    margin-top: 2rem;
-}
+
 
 .page-three textarea {
     padding: 0.80rem;
@@ -219,6 +225,7 @@ label{
     resize: none;
     outline: none;
     border: 1px solid var(--gray);
+    width: 100%;
 }
 
 .last-page div{
@@ -232,12 +239,13 @@ label{
     font-size: 0.75rem;
 }
 
-.last-page input{
+.divider input[type="text"]{
     border: 1px solid var(--gray);
     outline: none;
     padding: 0.80rem;
     border-radius: 5px;
     margin: 0.5rem 0 0.5rem 0;
+    width: 100%;
 }
 
 .last-page button{
@@ -245,8 +253,49 @@ label{
 }
 
 .base-paragraph{
-    font-size: 0.88rem;
+    font-size: 0.65rem;
     margin-top: 1rem;
     padding: 0;
     text-align: justify;
+    color: var(--medium-gray);
+}
+
+.input-divider{
+  margin-top: 1rem;
+}
+
+.input-divider input{
+
+    border: 1px solid var(--gray);
+    outline: none;
+    padding: 0.80rem;
+    border-radius: 5px;
+    margin: 0.5rem 0 0.5rem 0;
+    width: 48%;
+}
+
+/*UTILS */
+
+.mt-1{
+    margin-top: 1rem;
+}
+.mt-2{
+    margin-top: 2rem;
+}
+.mt-3{
+    margin-top: 3rem;
+}
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+.mb-2{
+    margin-bottom: 2rem;
+}
+.mb-3{
+    margin-bottom: 3rem;
+}
+
+.mb-xl{
+    margin-bottom: 5rem;
 }

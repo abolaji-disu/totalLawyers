@@ -1,37 +1,38 @@
 export default `
-<div class="last-page">
-    <p>We found 1 SSDI lawyer in your area</p>
+<div class="last-page page-wrapper">
+    <p class="mt-2">We found 1 SSDI lawyer in your area</p>
     
-     <label>
-        First Name
-        <div>
-        <input type="text" name="First Name" placeholder="Enter First Name" />
-        </div>
-    </label>
-    
-     <label>
-        Last Name
-        <div>
-        <input type="text" name="Last Name" placeholder="Enter Last Name" />
-        </div>
-    </label>
-    
-     <label>
-        Phone Number
-        <div>
-        <input type="text" name="Phone Number" placeholder="Enter Phone Number" />
-        </div>
-    </label>
+    <div class="input-divider">
+         <label>
+           What's your full name?
+         </label>    
+         <div class="radios">
+             <input type="text" name="name" placeholder="First Name" />
+            <input type="text" name="name" placeholder="Last Name" />
+</div>
+
+    </div>
     
     
-     <label>
-        Email
-        <div>
-        <input type="text" name="Email" placeholder="Enter Email Address" />
-        </div>
-    </label>
+    <div class="divider">
+         <label>
+            What's your telephone number
     
-        <button class="last-step">Submit</button>    
+            <input type="text" name="Phone Number"/>
+        
+        </label>
+    </div>
+    
+   <div class="divider">
+         <label>
+            What's your email address?
+ 
+            <input type="text" name="Email"/>
+   
+        </label>
+    </div>
+    
+        <button class="last-step next-step" data-next="1">Get Free Credit</button>    
         <p class="base-paragraph">
       By submitting this form I agree to the  <a href="https://www.internetbrands.com/ibterms/" target="_blank">Terms of Use<a> and
         <a href="https://www.internetbrands.com/privacy/privacy-main/" target="_blank">Privacy Policy </a> and 

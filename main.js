@@ -29,5 +29,5 @@ function attachNextStepHandler() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    loadPage(1);
+    loadPage(5);
 });
