@@ -4,10 +4,10 @@ export default `
     <label>3. Have you been treated by a doctor, hospital or clinic in the last year?</label>
     <div class="radios">
         <label>
-            <input type="radio" name="out_of_work" value="yes"> Yes
+            <input type="radio" name="treated" value="yes"> Yes
         </label>
         <label>
-            <input type="radio" name="out_of_work" value="no"> No
+            <input type="radio" name="treated" value="no"> No
         </label>
     </div>
 
@@ -20,6 +20,6 @@ export default `
             <input type="radio" name="out_of_work" value="no"> No
         </label>
     </div>
-    <button>Next Steps</button>
+    <button class="next-step" data-next="3" >Next Step</button>
 </div>
 `

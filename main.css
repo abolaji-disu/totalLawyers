@@ -75,7 +75,7 @@ header div {
 .main-container {
     background: var(--white);
     border-radius: 4px;
-    margin: 2rem 20%;
+    margin: 2rem 25%;
     /*padding: 1.5rem;*/
     display: flex;
     height: 24rem;
@@ -90,12 +90,13 @@ header div {
 }
 
 
-.left-section h1,p{
+.left-section h2,p{
     margin:  1rem 1rem 0 1rem;
 }
 
 .left-section p {
     margin-bottom: 4rem;
+    font-size: 0.75rem;
     flex-grow: 0.7;
 }
 
@@ -172,6 +173,9 @@ select{
     border-radius: 2px;
     align-content: center;
 }
+label{
+    font-size: 0.75rem;
+}
 
 .page-one .radios{
     margin-bottom: 0;
@@ -179,4 +183,41 @@ select{
 
 .page-one button{
     margin-top: 5.5rem;
+}
+
+.page-two .radios{
+    margin-bottom: 0;
+}
+
+.page-two button{
+    margin-top: 5.5rem;
+}
+
+.page-three input {
+    border: 1px solid var(--gray);
+    outline: none;
+    padding: 0.80rem;
+    border-radius: 5px;
+    margin: 0 0 1rem;
+}
+.page-three input ,textarea{
+    margin-top: 1rem;
+}
+
+.page-three div{
+    padding: 0;
+    margin: 0;
+}
+.page-three button{
+    margin-top: 2rem;
+}
+
+.page-three textarea {
+    padding: 0.80rem;
+    max-width: 100%;
+    min-height: 5rem;
+    min-width: 5rem;
+    resize: none;
+    outline: none;
+    border: 1px solid var(--gray);
 }

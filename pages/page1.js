@@ -17,6 +17,6 @@ export default `
             <input type="radio" name="out_of_work" value="no"> No
         </label>
     </div>
-    <button>Next Steps</button>
+    <button class="next-step" data-next="2" >Next Step</button>
 </div>
 `
