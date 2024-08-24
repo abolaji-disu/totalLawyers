@@ -114,18 +114,31 @@ header div {
 
 }
 
+.input-div{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
 .base-logos {
     display: flex;
     margin: 0 1rem;
     justify-content: space-between;
-    align-content: flex-end;
+    align-items: center;
 }
+
+.lower-content{
+    display: flex;
+    flex-direction: column;
+}
+
 .base-logos img{
     width: 4rem;
 }
 
 .right-section {
    padding: 0 1rem;
+    display: flex;
 }
 
 .page-wrapper{
@@ -164,8 +177,8 @@ select{
 
 .divider label{
     /*display: inline-block;*/
-    margin-bottom: 1rem;
-    font-size: 0.90rem;
+    /*margin-bottom: 1rem;*/
+    font-size: 0.80rem;
 }
 
 .right-section button{
@@ -233,7 +246,7 @@ select{
     margin: 0;
 }
 
-.last-page p:nth-child(1) {
+.found-note {
     text-align: center;
     margin-bottom: 0.5rem;
     font-size: 0.75rem;
@@ -244,7 +257,7 @@ select{
     outline: none;
     padding: 0.80rem;
     border-radius: 5px;
-    margin: 0.5rem 0 0.5rem 0;
+    margin: 0.5rem 0 0.1rem 0;
     width: 100%;
 }
 
@@ -260,19 +273,15 @@ select{
     color: var(--medium-gray);
 }
 
-.input-divider{
-  margin-top: 1rem;
+.last-page .radios{
+    width: 100%;
 }
 
-.input-divider input{
-
-    border: 1px solid var(--gray);
-    outline: none;
-    padding: 0.80rem;
-    border-radius: 5px;
-    margin: 0.5rem 0 0.5rem 0;
-    width: 48%;
+#lower-2{
+    display: none;
 }
+
+
 
 /*UTILS */
 
@@ -296,6 +305,69 @@ select{
     margin-bottom: 3rem;
 }
 
-.mb-xl{
+.step{
     margin-bottom: 5rem;
 }
+
+.last-step{
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 800px) {
+
+    .next-step{
+        margin-bottom: 0;
+    }
+
+    .input-div{
+        display: block;
+        justify-content: space-between;
+        /*column-gap: 10px;*/
+    }
+
+    .main-container {
+        flex-wrap: wrap;
+        margin: 1rem 15%;
+        flex-direction: column;
+    }
+
+    #lower-1{
+        display: none;
+    }
+
+    #lower-2{
+        display: flex;
+    }
+
+    .right-section {
+        margin-top: 1rem;
+    }
+
+    .lower-content {
+        margin-top: 1rem;
+    }
+
+    .left-section {
+        background: var(--white);
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .left-section h2::after {
+        display: none;
+    }
+
+    #sub1 {
+        font-size: 1rem;
+        margin-top: 0.75rem;
+    }
+
+    .lower-container p {
+        margin: 5px 0 0 0;
+        text-align: center;
+        padding: 0 3rem;
+        font-size: 0.55rem;
+    }
+}
+

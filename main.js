@@ -14,6 +14,13 @@ const pages = {
 
 
 function loadPage(pageNumber) {
+    console.log(pageNumber)
+    const appSubheader = document.querySelector('#sub1');
+    if (pageNumber === "5"){
+        appSubheader.innerHTML = 'Enter your details for a free consult';
+    }else {
+        appSubheader.innerHTML = ' Answer a few questions to get started';
+    }
     document.querySelector('.right-section').innerHTML = pages[pageNumber];
     attachNextStepHandler();
 }
@@ -29,5 +36,30 @@ function attachNextStepHandler() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    loadPage(5);
+    loadPage("1");
 });
+
+
+// function moveElementBasedOnScreenWidth() {
+//     const mediaQuery = window.matchMedia("(max-width: 800px)");
+//     const rightSection = document.querySelector('.right-section');
+//     const mainContainer = document.querySelector('.main-container');
+//     const lowerContent = document.querySelector('.lower-content');
+//     const baseParagraph = document.querySelector('.base-paragraph');
+//
+//     if (mediaQuery.matches) {
+//         if (rightSection && lowerContent) {
+//             lowerContent.parentNode.insertBefore(rightSection, lowerContent.nextSibling);
+//         }
+//     } else {
+//         if (rightSection && mainContainer) {
+//             mainContainer.appendChild(rightSection);
+//         }
+//     }
+// }
+//
+// // Initial check on page load
+// moveElementBasedOnScreenWidth();
+//
+// // Add an event listener for window resize
+// window.addEventListener('resize', moveElementBasedOnScreenWidth);
