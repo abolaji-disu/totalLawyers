@@ -1,8 +1,8 @@
 export default `
  <div class="page-three page-wrapper">
  
- <div class="divider mt-2">
-         <label class="mb-1" style="display: block">
+ <div class="divider">
+         <label class="top-label">
             7. What's your zip code?
             <input type="text" name="zip-code" />
         </label>

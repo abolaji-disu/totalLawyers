@@ -38,28 +38,3 @@ function attachNextStepHandler() {
 document.addEventListener('DOMContentLoaded', function () {
     loadPage("1");
 });
-
-
-// function moveElementBasedOnScreenWidth() {
-//     const mediaQuery = window.matchMedia("(max-width: 800px)");
-//     const rightSection = document.querySelector('.right-section');
-//     const mainContainer = document.querySelector('.main-container');
-//     const lowerContent = document.querySelector('.lower-content');
-//     const baseParagraph = document.querySelector('.base-paragraph');
-//
-//     if (mediaQuery.matches) {
-//         if (rightSection && lowerContent) {
-//             lowerContent.parentNode.insertBefore(rightSection, lowerContent.nextSibling);
-//         }
-//     } else {
-//         if (rightSection && mainContainer) {
-//             mainContainer.appendChild(rightSection);
-//         }
-//     }
-// }
-//
-// // Initial check on page load
-// moveElementBasedOnScreenWidth();
-//
-// // Add an event listener for window resize
-// window.addEventListener('resize', moveElementBasedOnScreenWidth);

@@ -2,8 +2,8 @@ export default `
 
 <div class="page-two page-wrapper" >
 
-<div class="divider mt-2">
-      <label class="mb-1" style="display: block">5. Do you already receive social security benefits?</label>
+<div class="divider">
+      <label class="top-label">5. Do you already receive social security benefits?</label>
         <div class="radios">
             <label>
                 <input type="radio" name="social" value="yes"> Yes

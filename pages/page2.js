@@ -1,8 +1,8 @@
 export default `
 <div class="page-one page-wrapper ">
 
-    <div class="divider mt-2">
-          <label class="mb-1" style="display: block">3. Have you been treated by a doctor, hospital or clinic in the last year?</label>
+    <div class="divider">
+          <label class="top-label">3. Have you been treated by a doctor, hospital or clinic in the last year?</label>
         <div class="radios">
             <label>
                 <input type="radio" name="treated" value="yes"> Yes

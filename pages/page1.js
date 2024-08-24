@@ -2,8 +2,8 @@
 export default `
 <div class="default-page page-wrapper" >
 
-    <div class="divider mt-2">
-        <label for="age" class="mb-1" style="display: block">
+    <div class="divider">
+        <label for="age" class="top-label ">
             1. How old are you?
         </label>
         <select id="age" name="age">
