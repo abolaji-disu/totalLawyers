@@ -178,14 +178,8 @@ select{
     margin-bottom: 1rem;
 }
 
-/*.divider {*/
-
-/*    margin-top: 2rem;*/
-/*}*/
 
 .divider label{
-    /*display: inline-block;*/
-    /*margin-bottom: 1rem;*/
     font-size: 0.80rem;
 }
 
@@ -337,7 +331,6 @@ select{
     .input-div{
         display: block;
         justify-content: space-between;
-        /*column-gap: 10px;*/
     }
 
     .main-container {
@@ -382,6 +375,12 @@ select{
         text-align: center;
         padding: 0 3rem;
         font-size: 0.55rem;
+    }
+
+    footer img{
+        position: absolute;
+        top: 100%;
+        left: 90%;
     }
 }
 
