@@ -13,7 +13,7 @@ const pages = {
 }
 
 
-function loadPage(pageNumber) {
+export function loadPage(pageNumber) {
     console.log(pageNumber)
     const appSubheader = document.querySelector('#sub1');
     if (pageNumber === "5"){
@@ -25,7 +25,7 @@ function loadPage(pageNumber) {
     attachNextStepHandler();
 }
 
-function attachNextStepHandler() {
+export function attachNextStepHandler() {
     const nextButtons = document.querySelectorAll('.next-step');
     nextButtons.forEach(button => {
         button.addEventListener('click', function () {
